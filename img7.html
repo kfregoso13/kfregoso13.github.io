@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+  <head> 
+  <title>Kaitlyn's Portfolio</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xfa8azv.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+
+<body>
+	
+	<ul> <!-- had to remove the class added to the ul, https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active -->
+	   <img src="img/name.jpg" style="width:17%">
+	  <li> <a class="active" href="gallery.html">gallery</a></li>
+	  <li> <a  href="about.html">about</a></li>
+	  <li> <a  href="index.html">home</a></li> 
+	</ul>
+<a href="gallery.html" class="previous" style="padding: 8px 16px;position: absolute; top: 100px; font-family: tenez, sans-serif; font-weight: 300; font-style:italic; font-size:20px;" >&laquo; Previous</a>
+
+<img class="indhorizontal" src= "img/7.jpg" align="left">
+
+<h2>"Untitled", Nov. 2019, Digital Photography <span id="dots">...</span><span id="more"> <br> Visiting antique stores has become sort of a weekend ritual for my mom, aunt, cousin, and I. I decided to take my camera along on one of our trips and ended up with some great shots. In this one you see the surprise on my moms and cousins face when they see a creepy doll that was lying around the store. The clutter in the photo is really what makes this an authentic photo of an antique store.</span></h2>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script type="text/javascript">
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>

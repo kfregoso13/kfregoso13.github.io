@@ -1,0 +1,340 @@
+/* -----   STARTS NAV Styling*/
+/* -----   https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active */
+ul {
+  background-color: #8ca3a3;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  font-family: tenez, sans-serif;
+  font-weight: 400;
+  font-style: normal;;
+
+}
+
+li {
+  float: right; /*position link horizontally  */
+}
+
+li a {
+  display: block; /*specifies the display behavior - rendering box */
+  color: white;
+  text-align: center;/*aligns text in the center of the navigation bar link */
+  padding: 14px 16px;
+  text-decoration: none; /* this property specifies the decoration added to the text - line, color, style  */
+  color: #f2f2f2;
+  font-size: 24px;
+}
+
+/*links on hover */
+li a:hover:not(.active) {
+  background-color: #c8c3cc;
+  color: black;
+}
+
+/* active/current link */
+.active { 
+  background-color: #563f46;
+  color: white;
+}
+
+body {background-color: #494f4f}
+
+/* -----   END NAV*/
+
+ /*-----   CODE FOR SLIDESHOW FROM https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px; /* adds space between nav and slideshow */
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: tenez, sans-serif;
+  font-style: italic;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: tenez, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #563f46;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* -----   STARTS About Styling*/
+
+.profile {
+  padding-left: 100px;
+  padding-top: 50px;
+  width:25% 
+}
+
+.heading {
+  font-family: lamar-pen, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  padding-left: 620px;
+  color:white;
+}
+
+.statement {
+  padding-left: 620px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: tenez, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* -----   END About*/
+
+
+/*-----   CODE FOR Gallery FROM https://w3bits.com/tools/masonry-generator/ */
+
+.masonry-wrapper {
+  padding: 1.5em;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.masonry {
+  columns: 1;
+  column-gap: 10px;
+}
+.masonry-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {  .masonry {
+    columns: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    columns: 3;
+  }
+}
+.masonry-item, .masonry-content {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.masonry-item {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, .3));
+  transition: filter .25s ease-in-out;
+}
+.masonry-item:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .3));
+}
+.masonry-footer {
+  font-size: .75em;
+  opacity: .25;
+  text-align: center;
+  padding-top: 3em; 
+  padding-bottom: 3em;
+  margin-bottom: -1.5em;
+  transition: opacity 1s ease-in-out;
+}
+
+}
+.masonry-footer:hover, .masonry-footer:active, .masonry-footer:focus {
+  opacity: .75;
+}
+
+
+/* Individual Pages */
+a {
+  text-decoration: none;
+  display: inline-block;
+  
+}
+
+
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.indhorizontal {
+  width:50%;
+  padding-top:100px;
+  padding-left:100px;
+  padding-right:20px;
+}
+
+.image2 {
+  width:35%;
+  padding-top:100px;
+  padding-left:200px;
+  padding-right:20px;
+}
+
+.image6 {
+  width:25%;
+  padding-top:100px;
+  padding-left:200px;
+  padding-right:20px;
+}
+
+#more {display: none;}
+
+button {
+  background-color:#f1f1f1;
+  font-family: tenez, sans-serif; font-weight: 300; font-style: italic; font-size:20px;
+}
+
+button:hover {
+  background-color:#563f46;
+  color:white;
+}
+
+h2{
+padding-top:100px;
+padding-right:40px;
+padding-left:1020px;
+font-size:25px;
+font-family: tenez, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:white;
+}
+
+h3{
+padding-top:100px;
+padding-right:40px;
+padding-left:750px;
+font-size:25px;
+font-family: tenez, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:white;
+}
+
+h4{
+padding-top:100px;
+padding-right:40px;
+padding-left:600px;
+font-size:25px;
+font-family: tenez, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:white;
+}
+
+h5{
+padding-top:20px;
+padding-right:40px;
+padding-left:20px;
+font-size:25px;
+font-family: tenez, sans-serif;
+font-weight: 400;
+font-style: normal;
+color:white;
+}
+
+canvas { 
+  padding-top:100px;
+  padding-left:;
+  padding-right:600px;}
+
+iframe{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 20px;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+  <head> 
+  <title>Kaitlyn's Portfolio</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xfa8azv.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+
+<body>
+	
+	<ul> <!-- had to remove the class added to the ul, https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active -->
+	   <img src="img/name.jpg" style="width:17%">
+	  <li> <a class="active" href="gallery.html">gallery</a></li>
+	  <li> <a  href="about.html">about</a></li>
+	  <li> <a  href="index.html">home</a></li> 
+	</ul>
+<a href="gallery.html" class="previous" style="padding: 8px 16px;position: absolute; top: 100px; font-family: tenez, sans-serif; font-weight: 300; font-style:italic; font-size:20px;" >&laquo; Previous</a>
+
+<iframe align="left" width="900" height="506.25" src="https://www.youtube.com/embed/AcARD8UYcS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>"Skater", Sept. 2019, Video <span id="dots">...</span><span id="more"> <br> This is a video I took of my younger brother skateboarding and decided to edit. I drew outlines of stills from the video and added them in. I also thought it would just be fun to add in fire just because I was sort of thinking of how a kid would see themselves. My video doesn’t have sound because I thought having just 3 seconds of sound would be distracting. This project was created using illustrator and premiere.</span></h2>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script type="text/javascript">
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+</body>

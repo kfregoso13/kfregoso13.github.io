@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+  <head> 
+  <title>Kaitlyn's Portfolio</title>
+  <link rel="stylesheet" href="https://use.typekit.net/xfa8azv.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+
+<body>
+	
+	<ul> <!-- had to remove the class added to the ul, https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active -->
+	   <img src="img/name.jpg" style="width:17%">
+	  <li> <a class="active" href="gallery.html">gallery</a></li>
+	  <li> <a  href="about.html">about</a></li>
+	  <li> <a  href="index.html">home</a></li> 
+	</ul>
+<a href="gallery.html" class="previous" style="padding: 8px 16px;position: absolute; top: 100px; font-family: tenez, sans-serif; font-weight: 300; font-style:italic; font-size:20px;" >&laquo; Previous</a>
+<div>
+    <iframe  align="left" title="A 3D model" width="900" height="600" src="https://sketchfab.com/models/e6a4a008d60c44c99a127b6ceab450d1/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true">
+    </iframe>
+
+</div>
+
+<h2>"Untitled", Oct. 2019, MeshMixer <span id="dots">...</span><span id="more"> <br> This illustrates a specific scene where I wish I was pretty much at all times. Along the water</span></h2>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script type="text/javascript">
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<button onclick="window.location.href ='https://sketchfab.com/3d-models/art74scene2-e6a4a008d60c44c99a127b6ceab450d1';"  class="button"><span> View on Sketchfab </span></button>
+
+
+
+</body>
